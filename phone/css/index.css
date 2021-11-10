@@ -1,0 +1,465 @@
+html,body{
+	font-size: 100px;
+}
+.imgsty{width: 100%;display: block;}
+.posir{position: relative;}
+.main{
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+
+.zhuanpan{
+	width: 1.41rem;
+	height: 1.32rem;
+	position: fixed;
+	top: 6.60rem;
+	right: 0.37rem;
+	z-index: 9;
+}
+.zhuanpanBg1{
+	width: 1.41rem;
+	height: 1.32rem;
+	position: absolute;
+	z-index: 9;
+	background: url(../img/float.png) no-repeat center;
+	background-size: cover;
+}
+.zhuanpanBg2{
+	width: 1.15rem;
+	height: 1.16rem;
+	background: url(../img/floatbg.png) no-repeat center;
+	background-size: cover;
+	border-radius: 50%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0.05rem;
+	margin: 0 auto;
+	z-index: 7;
+	animation: zhuan 3s ease-out infinite;
+}
+@keyframes zhuan{
+	0%{transform: rotate(0deg);}
+	100%{transform: rotate(1440deg);}
+}
+.bimg{
+	width: 100%;
+}
+.topPhone{
+	width: 2.2rem;
+	height: 0.39rem;
+	border: 2px solid #059944;
+	border-radius: 4px;
+	position: absolute;
+	top: 0.47rem;
+	right: 0.3rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.topPhone .topPhoneIcon{
+	width: 0.27rem;
+	height: 0.27rem;
+	background: url(../img/icon33.png) no-repeat center;
+	background-size: cover;
+	margin: 0 0.11rem 0 0.1rem;
+}
+.topPhone .topPhoneNum{
+	font-size: 0.18rem;
+	font-family: Microsoft YaHei, Microsoft YaHei-Bold;
+	font-weight: bold;
+	color: #029a44;
+}
+.toptime{
+	width: 6.9rem;
+	height: 5.03rem;
+	background: url(../img/toptime.png) no-repeat center;
+	background-size: cover;
+	position: absolute;
+	top: 9.08rem;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	font-size: 0.3rem;
+	font-family: Microsoft YaHei, Microsoft YaHei-Regular;
+	font-weight: 400;
+	color: #ffffff;
+}
+.toptime .titles{
+	width: 100%;
+	height: 0.77rem;
+	display: flex;
+	justify-content: center;
+	padding-top: 0.16rem;
+}
+
+.toptime .titles .text{
+	
+}
+.toptime .titles .t1{
+	width: 0.63rem;
+	height: 0.77rem;
+}
+.toptime .titles .t2{
+	width: 0.27rem;
+	height: 0.77rem;
+	font-weight: bold;
+	margin: 0 0.23rem 0 0.16rem;
+}
+.toptime .titles .t3{
+	width: 0.6rem;
+	height: 0.6rem;
+	background-color: #fff;
+	color: #019a43;
+	font-weight: bold;
+	text-align: center;
+	line-height: 0.6rem;
+	border-radius: 0.13rem;
+	box-shadow: 0rem 1px 0.08rem 0px #c36010; 
+}
+.toptime .titles .t4{
+	width: 0.31rem;
+	height: 0.6rem;
+	font-weight: bold;
+	color: #019a43;
+	text-align: center;
+	line-height: 0.6rem;
+}
+.toptime .titles1 {
+	width: 100%;
+	height: 0.5rem;
+	font-size: 0.36rem;
+	font-family: Microsoft YaHei UI, Microsoft YaHei UI-Bold;
+	font-weight: 700;
+	text-align: center;
+	color: #ffffff;
+	letter-spacing: 0px;
+	margin-top: 0.55rem;
+}
+.toptime .titles2 {
+	width: 100%;
+	height: 0.5rem;
+	font-size: 0.36rem;
+	font-family: Microsoft YaHei, Microsoft YaHei-Regular;
+	font-weight: 400;
+	text-align: center;
+	color: #ffffff;
+	letter-spacing: 4px;
+}
+.toptime .titles2 span{
+	font-size: 0.4rem;
+	font-weight: bold;
+}
+.toptime .titles3 {
+	width: 5.00rem;
+	height: 0.6rem;
+	background: rgba(255,255,255,0.17);
+	border-radius: 4px;
+	margin: 0.18rem auto 0;
+}
+.toptime .titles3 input{
+	width: 100%;
+	height: 100%;
+	outline: none;
+	border: 0;
+	background-color: transparent;
+	color: #FFFFFF;
+	padding-left: 0.32rem;
+}
+.toptime .titles3 input::placeholder {
+        color: #fff;
+    }
+.toptime .titles4 {
+	width: 5.00rem;
+	height: 0.45rem;
+	margin: 0.16rem auto 0;
+	display: flex;
+	font-size: 0.24rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.toptime .titles4 .iconBox{
+	display: flex;
+	align-items: center;
+}
+.toptime .titles4 .iconBox .icons{
+	width: 0.48rem;
+	height: 0.45rem;
+	display: block;
+	margin-right: 0.14rem;
+}
+.toptime .titles4 .iconBox .icons1{
+	background: url(../img/icon1.png) no-repeat center;
+	background-size: cover;
+}
+.toptime .titles4 .iconBox .icons2{
+	background: url(../img/icon2.png) no-repeat center;
+	background-size: cover;
+}
+.toptime .btn1 {
+	width: 2.49rem;
+	height: 0.62rem;
+	margin: 0.22rem auto 0;
+}
+
+.btn{
+	width: 2.49rem;
+	height: 0.62rem;
+	background-color: #fea020;
+	border-radius: 4px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	font-size: 0.28rem;
+	font-family: Microsoft YaHei, Microsoft YaHei-Bold;
+	font-weight: bold;
+	text-align: center;
+	line-height: 0.62rem;
+	color: #ffffff;
+}
+.btn3{bottom: 0.46rem;}
+.btn4{bottom: 0.3rem;}
+.btn5{bottom: 0.26rem;}
+
+.bomtime{
+	width: 6.9rem;
+	height: 4.85rem;
+	border: 1px solid red;
+	position: absolute;
+	top: 12.19rem;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	font-size: 0.36rem;
+	font-family: Microsoft YaHei, Microsoft YaHei-Regular;
+	font-weight: 400;
+	color: #ffffff;
+}
+.bomtime .titles{
+	width: 100%;
+	height: 0.77rem;
+	display: flex;
+	justify-content: center;
+	align-items: baseline;
+	padding-top: 0.16rem;
+}
+
+.bomtime .titles .text{
+	
+}
+.bomtime .titles .t1{
+	width: 0.63rem;
+	height: 0.77rem;
+}
+.bomtime .titles .t2{
+	width: 0.77rem;
+	height: 0.77rem;
+	font-weight: bold;
+	margin: 0 0.23rem 0 0.16rem;
+}
+.bomtime .titles .t3{
+	width: 0.6rem;
+	height: 0.6rem;
+	background-color: #fff;
+	color: #019a43;
+	font-weight: bold;
+	text-align: center;
+	line-height: 0.6rem;
+	border-radius: 0.13rem;
+	box-shadow: 0rem 1px 0.08rem 0px #c36010; 
+}
+.bomtime .titles .t4{
+	width: 0.31rem;
+	height: 0.6rem;
+	font-weight: bold;
+	color: #fff;
+	text-align: center;
+	line-height: 0.6rem;
+}
+.bomtime .titles1 {
+	width: 100%;
+	height: 0.5rem;
+	font-size: 0.36rem;
+	font-family: Microsoft YaHei UI, Microsoft YaHei UI-Bold;
+	font-weight: 700;
+	text-align: center;
+	color: #ffffff;
+	letter-spacing: 0px;
+	margin-top: 0.4rem;
+}
+.bomtime .titles2 {
+	width: 100%;
+	height: 0.5rem;
+	font-size: 0.36rem;
+	font-family: Microsoft YaHei, Microsoft YaHei-Regular;
+	font-weight: 400;
+	text-align: center;
+	color: #ffffff;
+	letter-spacing: 4px;
+}
+.bomtime .titles2 span{
+	font-size: 0.4rem;
+	color: #FF811B;
+	 text-shadow: #fff 1px 0 0, #fff 0 1px 0, #fff -1px 0 0, #fff 0 -1px 0;
+	font-weight: bold;
+}
+.bomtime .titles3 {
+	width: 5.00rem;
+	height: 0.6rem;
+	background: rgba(255,255,255,0.17);
+	border: 2px solid rgba(255,255,255,0.5);
+	border-radius: 4px;
+	margin: 0.18rem auto 0;
+	
+}
+.bomtime .titles3 input{
+	width: 100%;
+	height: 100%;
+	outline: none;
+	border: 0;
+	background-color: transparent;
+	color: #FFFFFF;
+	font-size: 0.24rem;
+	text-align: center;
+}
+.bomtime .titles3 input::placeholder {
+        color: #fff;
+    }
+.bomtime .titles4 {
+	width: 5.00rem;
+	height: 0.45rem;
+	margin: 0.16rem auto 0;
+	display: flex;
+	font-size: 0.24rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.bomtime .titles4 .iconBox{
+	display: flex;
+	align-items: center;
+}
+.bomtime .titles4 .iconBox .icons{
+	width: 0.48rem;
+	height: 0.45rem;
+	display: block;
+	margin-right: 0.14rem;
+}
+.bomtime .titles4 .iconBox .icons1{
+	background: url(../img/icon1.png) no-repeat center;
+	background-size: cover;
+}
+.bomtime .titles4 .iconBox .icons2{
+	background: url(../img/icon2.png) no-repeat center;
+	background-size: cover;
+}
+.bomtime .btn1 {
+	width: 2.97rem;
+	height: 0.62rem;
+	margin: 0.22rem auto 0;
+}
+.footer{
+	width: 100%;
+	height: 2.11rem;
+	background: #515151;
+	padding-top: 1px;
+}
+.footer .phonesBox{
+	width: 100%;
+	height: 0.4rem;
+	margin-top: 0.96rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.footer .phonesBox .iconPhone{
+	width: 0.38rem;
+	height: 0.38rem;
+	background: url(../img/icon3.png) no-repeat center;
+	background-size: cover;
+}
+.footer .phonesBox .numPhone{
+	font-size: 0.36rem;
+	font-family: Microsoft YaHei, Microsoft YaHei-Bold;
+	font-weight: bold;
+	text-align: LEFT;
+	color: #ffffff;
+}
+.erCode{
+	width: 1.8rem;
+	height: 1.76rem;
+	position: absolute;
+	left: 0;
+	top: -50%;
+	right: 0;
+	margin: 0 auto;
+	background-color: #C36010;
+}
+
+.alertModel{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 100;
+	background-color: rgba(0,0,0,0.8);
+}
+.alertModel .contents{
+	width: 5.5rem;
+	height: 6.28rem;
+	background: #ffffff;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 3.47rem;
+	margin: 0 auto;
+}
+.alertModel .contents .closeModel{
+	width: 0.3rem;
+	height: 0.3rem;
+	margin: 0.3rem 0 0 4.84rem;
+	background: url(../img/close.png) no-repeat center;
+	background-size: cover;
+}
+.alertModel .contents .successModel{
+	width: 1.93rem;
+	height: 1.93rem;
+	border-radius: 50%;
+	margin: 0.31rem auto 0;
+	background: url(../img/bgok.png) no-repeat center;
+	background-size: cover;
+}
+.alertModel .contents .textModel{
+	font-size: 0.3rem;
+	font-family: Microsoft YaHei, Microsoft YaHei-Bold;
+	font-weight: 700;
+	text-align: center;
+	color: #333333;
+	margin-top: 0.3rem;
+}
+.alertModel .contents .text1Model{
+	font-size: 0.24rem;
+	font-family: Microsoft YaHei, Microsoft YaHei-Regular;
+	font-weight: 400;
+	text-align: center;
+	color: #666666;
+	margin-top: 0.22rem;
+}
+.alertModel .contents .btnModel{
+	width: 2.22rem;
+	height: 0.6rem;
+	font-size: 0.22rem ;
+	border: 2px solid #2e9a3f;
+	border-radius: 4px;
+	text-align: center;
+	line-height: 0.6rem;
+	color: #333333;
+	margin: 0.7rem  auto 0;
+	
+}
+.hiddens{display: none;}
+

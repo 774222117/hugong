@@ -1,0 +1,890 @@
+.container {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.head {
+	width: 100%;
+	height: 0.9rem;
+	background-color: #009a44;
+	position: relative;
+}
+.head .headTitle {
+	width: 3.8rem;
+	height: 0.4rem;
+	position: absolute;
+	top: 0.25rem;
+	left: 3.13rem;
+	display: flex;
+	align-items: center;
+}
+.headTitle .titlePic {
+	width: 0.42rem;
+	height: 0.42rem;
+	background: url(../images/headPic.png)no-repeat;
+	background-size: cover;
+	
+}
+.headTitle .titleText {
+	width: 1.52rem;
+	height: 0.32rem;
+	font-family: Microsoft YaHei, Microsoft YaHei-Bold;
+	font-weight: 700;
+	text-align: LEFT;
+	color: #ffffff;
+	letter-spacing: 0px;
+	border-right: 1px #ffffff solid;
+	margin-left: 0.1rem;
+}
+.headTitle .titleServe {
+	width: 1.74rem;
+	height: 0.18rem;
+	font-size: 12px;
+	font-family: Microsoft YaHei, Microsoft YaHei-Regular;
+	font-weight: 400;
+	text-align: LEFT;
+	color: #ffffff;
+	margin-left: 0.14rem;
+}
+.head .headTel {
+	width: 2rem;
+	height: 0.39rem;
+	background-color: #fea020;
+	border-radius: 0.04rem;
+	position: absolute;
+	top: 0.35rem;
+	right: 3.1rem;
+	display: flex;
+	align-items: center;
+}
+.headTel .telPic {
+	width: 0.27rem;
+	height: 0.27rem;
+	margin-left: 0.21rem;
+	background: url(../images/telPic.png)no-repeat;
+	background-size: cover;
+}
+.headTel .telNumber {
+	width: 1.16rem;
+	height: 0.24rem;
+	margin-left: 0.13rem;
+}
+.careOldPeople {
+	width: 19.2rem;
+	height: 6.90rem;
+	background: url(../images/careOldPeople.png)no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.buyNowBtn {
+	width: 2.79rem;
+	height: 0.71rem;
+	position: absolute;
+	background: url(../images/nowBuy.png)no-repeat;
+	background-size: cover;
+	bottom: 2.03rem;
+	right: 7rem;
+	cursor: pointer;
+}
+.professionalNurse {
+	width: 19.20rem;
+	height: 7.12rem;
+	overflow: hidden;
+}
+.professionalNurse .professText {
+	width: 3.19rem;
+	height: 0.49rem;
+	background: url(../images/professText.png)no-repeat;
+	background-size: cover;
+	margin: 2.97rem auto 0 auto;
+}
+.professionalNurse .professionalType {
+	width: 13.03rem;
+	height: 2.8rem;
+	margin: 0.23rem 0 0 3.10rem;
+	display: flex;
+	justify-content: space-between;
+}
+.professionalType .professionalItem {
+	width: 2.76rem;
+	height: 2.84rem;
+	background: rgba(255,255,255,0.80);
+	border-radius: 4px;
+	cursor: pointer;
+}
+/* 被选中 */
+.ischangeProfess {
+	border-top: 1px solid #009a44;
+	border-right: 1px solid #009a44;
+	border-left: 1px solid #009a44;
+	border-bottom: 9px solid #009a44;
+}
+.professionalItem .professionalPic {
+	width: 1.1rem;
+	height: 1.1rem;
+	margin: 0.48rem auto 0 auto;
+}
+.professionalItem:nth-child(1) .professionalPic {
+	background: url(../images/idcardPic.png)no-repeat;
+	background-size: cover;
+}
+.professionalItem:nth-child(2) .professionalPic {
+	background: url(../images/professionalPic.png)no-repeat;
+	background-size: cover;
+}
+.professionalItem:nth-child(3) .professionalPic {
+	background: url(../images/servePic.png)no-repeat;
+	background-size: cover;
+}
+.professionalItem:nth-child(4) .professionalPic {
+	background: url(../images/insurancePic.png)no-repeat;
+	background-size: cover;
+}
+.professionalItem .idcardIntro,.professionalIntro,.serveIntro,.insuranceIntro {
+	width: 1.12rem;
+	height: 0.37rem;
+	font-size: 26px;
+	font-family: Microsoft YaHei, Microsoft YaHei-Bold;
+	font-weight: 700;
+	text-align: center;
+	color: #fea020;
+	margin: 0.22rem auto 0 auto;
+}
+.professionalItem .idcardText,.professionalText,.serveText,.insuranceText {
+	width: 1.62rem;
+	height: 0.24rem;
+	font-family: Microsoft YaHei, Microsoft YaHei-Regular;
+	font-weight: 400;
+	text-align: center;
+	color: #666666;
+	margin: 0.09rem auto 0 auto;
+}
+.professionalType .professional {
+	width: 2.76rem;
+	height: 2.84rem;
+	background: rgba(255,255,255,0.80);
+	border-radius: 4px;
+}
+
+.professionalType .serve {
+	width: 2.76rem;
+	height: 2.84rem;
+	background: rgba(255,255,255,0.80);
+	border-radius: 4px;
+}
+
+.professionalType .insurance {
+	width: 2.76rem;
+	height: 2.84rem;
+	background: rgba(255,255,255,0.80);
+	border-radius: 4px;
+}
+.flashSale {
+	width: 12.98rem;
+	height: 4.08rem;
+	position: absolute;
+	background: url(../images/falshSale.png)no-repeat;
+	background-size: cover;
+	top: 6.28rem;
+	left: 3.12rem;
+	z-index: 22;
+}
+/* 倒计时 */
+.flashSale .countDown {
+	width: 1.82rem;
+	height: 0.41rem;
+	position: absolute;
+	top: 0.38rem;
+	right: 4.32rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	text-align: center;
+	line-height: 0.41rem;
+}
+.countDown .hour {
+	width: 0.52rem;
+	height: 0.41rem;
+}
+.countDown .minute {
+	width: 0.52rem;
+	height: 0.41rem;
+}
+.countDown .mill {
+	width: 0.52rem;
+	height: 0.41rem;
+}
+/* 输入框 */
+.flashSale .telNumber {
+	width: 3.97rem;
+	height: 0.47rem;
+	position: absolute;
+	bottom: 1.55rem;
+	right: 2.38rem;
+	border: 0;
+	outline: none;
+	padding-left: 0.14rem;
+	font-family: Microsoft YaHei, Microsoft YaHei-Regular;
+	font-weight: 400;
+	text-align: left;
+	color: #ffffff;
+	background-color: rgba(255,255,255,0.06);
+}
+/* 修改placeholder的字体 */
+input::-webkit-input-placeholder {
+    color: #ffffff;
+}
+/* 去掉number输入框后面的上下按键 */
+input::-webkit-inner-spin-button {
+	-webkit-appearance:none;
+}
+/* 立即开抢按钮 */
+.gotoBuyBtn {
+	width: 2.33rem;
+	height: 0.45rem;
+	position: absolute;
+	bottom: 0.27rem;
+	right: 3.23rem;
+	background: url(../images/gotoBuy.png)no-repeat;
+	background-size: cover;
+	cursor: pointer;
+}
+.security {
+	width: 19.20rem;
+	height: 11.20rem;
+	background-color: #fff0e4;
+	overflow: hidden;
+}
+.securityText {
+	width: 5rem;
+	height: 0.48rem;
+	margin: 0.27rem auto 0 auto;
+	background: url(../images/securityText.png)no-repeat;
+	background-size: cover;
+}
+.securityContent {
+	width: 13rem;
+	height: 8.96rem;
+	margin: 0.25rem auto 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: space-between;
+}
+.securityContent .securityItem {
+	width: 4.01rem;
+	height: 4.38rem;
+	border: 1px #009a44 solid;
+	position: relative;
+	cursor: pointer;
+}
+.bottomLine {
+	width: 100%;
+	height: 0.09rem;
+	position: absolute;
+	bottom: 0;
+	background-color: #009a44;
+}
+.specialLogo {
+	width: 0.77rem;
+	height: 0.77rem;
+	position: absolute;
+	left: 1.65rem;
+	bottom: 0.92rem;
+}
+.securityItem:nth-child(1) .specialLogo {
+	background: url(../images/specialOne.png)no-repeat;
+	background-size: cover;
+}
+.securityItem:nth-child(2) .specialLogo {
+	background: url(../images/specialTwo.png)no-repeat;
+	background-size: cover;
+}
+.securityItem:nth-child(3) .specialLogo {
+	background: url(../images/specialThree.png)no-repeat;
+	background-size: cover;
+}
+.securityItem:nth-child(4) .specialLogo {
+	background: url(../images/specialFour.png)no-repeat;
+	background-size: cover;
+}
+.securityItem:nth-child(5) .specialLogo {
+	background: url(../images/specialFive.png)no-repeat;
+	background-size: cover;
+}
+.securityItem:nth-child(6) .specialLogo {
+	background: url(../images/specialSix.png)no-repeat;
+	background-size: cover;
+}
+.isActive {
+	display: block;
+}
+.unActive {
+	display: none;
+}
+.securityItem .itemPic {
+	width: 3.99rem;
+	height: 3.26rem;
+}
+.securityItem:nth-child(1) .itemPic {
+	background: url(../images/first.png)no-repeat;
+	background-size: cover;
+}
+.securityItem:nth-child(2) .itemPic {
+	background: url(../images/two.png)no-repeat;
+	background-size: cover;
+}
+.securityItem:nth-child(3) .itemPic {
+	background: url(../images/three.png)no-repeat;
+	background-size: cover;
+}
+.securityItem:nth-child(4) .itemPic {
+	background: url(../images/four.png)no-repeat;
+	background-size: cover;
+}
+.securityItem:nth-child(5) .itemPic {
+	background: url(../images/five.png)no-repeat;
+	background-size: cover;
+}
+.securityItem:nth-child(6) .itemPic {
+	background: url(../images/six.png)no-repeat;
+	background-size: cover;
+}
+.securityItem .itemEffect {
+	width: 100%;
+	height: 0.35rem;
+	font-family: Microsoft YaHei, Microsoft YaHei-Regular;
+	font-weight: 400;
+	text-align: center;
+	color: #333333;
+	letter-spacing: 0px;
+	margin: 0.3rem auto 0 auto;
+}
+.securityItem .itemEnglish {
+	color: #999999;
+	margin: 0.05rem auto 0 auto;
+	text-align: center;
+}
+/* 悉心照料 */
+.takeGoodCare {
+	width: 19.20rem;
+	height: 8.52rem;
+	overflow: hidden;
+}
+.takeGoodCare .takeGoodText {
+	width: 3.22rem;
+	height: 0.48rem;
+	background: url(../images/takeGoodText.png)no-repeat;
+	background-size: cover;
+	margin: 0.4rem auto 0 auto;
+}
+.takeGoodCare .takeGoodContent {
+	width: 12.96rem;
+	height: 6.09rem;
+	margin: 0.2rem auto 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+.takeGoodContent .takeGoodLeft {
+	width: 5.28rem;
+	height: 6.09rem;
+}
+.takeGoodLeft .lifeTest {
+	width: 5.28rem;
+	height: 1.85rem;
+	background: url(../images/lifeTest.png)no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.takeGoodLeft .lifeTest:hover {
+	background: url(../images/lifeTestHover.png)no-repeat;
+	background-size: cover;
+}
+.takeGoodLeft .goodlife {
+	width: 5.27rem;
+	height: 4.04rem;
+	background: url(../images/goodLife.png)no-repeat;
+	background-size: cover;
+	margin-top: 0.2rem;
+}
+.takeGoodLeft .goodlife:hover {
+	background: url(../images/goodlifeHover.png)no-repeat;
+	background-size: cover;
+}
+.takeGoodContent .takeGoodRight {
+	width: 7.45rem;
+	height: 6.09rem;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-between;
+	justify-content: space-between;
+}
+.takeGoodRight .outside {
+	width: 7.45rem;
+	height: 4.06rem;
+	background: url(../images/outside.png)no-repeat;
+	background-size: cover;
+}
+.takeGoodRight .outside:hover {
+	background: url(../images/outsideHover.png)no-repeat;
+	background-size: cover;
+}
+.takeGoodRight .prevention {
+	width: 3.67rem;
+	height: 1.83rem;
+	background: url(../images/prevention.png)no-repeat;
+	background-size: cover;
+}
+.takeGoodRight .prevention:hover {
+	background: url(../images/preventionHover.png)no-repeat;
+	background-size: cover;
+}
+.takeGoodRight .remind {
+	width: 3.59rem;
+	height: 1.83rem;
+	background: url(../images/remind.png)no-repeat;
+	background-size: cover;
+}
+.takeGoodRight .remind:hover {
+	background: url(../images/remindHover.png)no-repeat;
+	background-size: cover;
+}
+.moreService {
+	width: 3rem;
+	height: 0.55rem;
+	background: url(../images/moreService.png)no-repeat;
+	background-size: cover;
+	cursor: pointer;
+	margin: 0.32rem auto 0 auto;
+}
+
+/* 守护老人健康 */
+.protectOldHealth {
+	width: 19.20rem;
+	height: 7.22rem;
+	background-color: #fff0e4;
+	overflow: hidden;
+}
+.protectOldHealth .protectText {
+	width: 3.92rem;
+	height: 0.48rem;
+	background: url(../images/professialNurse.png)no-repeat;
+	background-size: cover;
+	margin: 0.4rem auto 0 auto;
+}
+.protectOldHealth .protectContent {
+	width: 12.91rem;
+	height: 4.87rem;
+	margin: 0.2rem auto 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+.protectContent .protectItem {
+	width: 3.1rem;
+	height: 4.87rem;
+}
+.protectContent .protectItem:nth-child(1) {
+	background: url(../images/protectOne.png)no-repeat;
+	background-size: cover;
+}
+.protectContent .protectItem:nth-child(2) {
+	background: url(../images/protectTwo.png)no-repeat;
+	background-size: cover;
+}
+.protectContent .protectItem:nth-child(3) {
+	background: url(../images/protectThree.png)no-repeat;
+	background-size: cover;
+}
+.protectContent .protectItem:nth-child(4) {
+	background: url(../images/protectFour.png)no-repeat;
+	background-size: cover;
+}
+.protectOldHealth .moreProfessionalNursing {
+	width: 3.71rem;
+	height: 0.55rem;
+	cursor: pointer;
+	background: url(../images/moreProfessionNurse.png)no-repeat;
+	background-size: cover;
+	margin: 0.3rem auto 0 auto;
+}
+
+/* 来自上万家庭的口碑 */
+.fromManyHome {
+	width: 19.20rem;
+	height: 6.63rem;
+	overflow: hidden;
+}
+.fromManyHome .fromManyHomeText {
+	width: 4.42rem;
+	height: 0.48rem;
+	margin: 0.31rem auto 0 auto;
+	background: url(../images/fromManyHomeText.png)no-repeat;
+	background-size: cover;
+}
+.fromManyHome .fromManyHomeContent {
+	width: 13.14rem;
+	height: 4.93rem;
+	margin: 0.3rem auto 0 auto;
+	position: relative;
+}
+.contentOne {
+	width: 13.14rem;
+	height: 3.28rem;
+	position: absolute;
+	display: flex;
+	z-index: 33;
+}
+.homeOne {
+	width: 3.87rem;
+	height: 3.3rem;
+	position: absolute;
+	z-index: 34;
+	background: url(../images/homeOne.png)no-repeat;
+	background-size: cover;
+	left: 1.62rem;
+	top: -0.01rem;
+	font-family: Microsoft YaHei, Microsoft YaHei-Regular;
+	font-weight: 400;
+	text-align: left;
+	color: rgba(51,51,51,1);
+}
+.homeTwo {
+	width: 3.87rem;
+	height: 3.3rem;
+	position: absolute;
+	z-index: 34;
+	background: url(../images/homeOne.png)no-repeat;
+	background-size: cover;
+	left: 3.28rem;
+	bottom: 0;
+	font-family: Microsoft YaHei, Microsoft YaHei-Regular;
+	font-weight: 400;
+	text-align: left;
+	color: rgba(51,51,51,1);
+}
+.shadowMask {
+	background-color: rgba(0,0,0,0.5)
+}
+.contentOne .fromOne {
+	width: 3.28rem;
+	height: 3.28rem;
+}
+.homeTwo .homeOneText {
+	width: 1.62rem;
+	height: 1.4rem;
+	margin: 0.76rem 0 0 1.8rem;
+}
+.homeTwo .homeOneName {
+	width: 1.24rem;
+	height: 0.26rem;
+	margin: 0.12rem 0 0 2rem;
+	text-align: right;
+}
+.homeOne .homeOneText {
+	width: 1.62rem;
+	height: 1.4rem;
+	margin: 0.76rem 0 0 1.8rem;
+}
+.homeOne .homeOneName {
+	width: 1.24rem;
+	height: 0.26rem;
+	margin: 0.12rem 0 0 2rem;
+	text-align: right;
+}
+.fromOne:nth-child(1) {
+	background: url(../images/fromOne.png)no-repeat;
+	background-size: cover;
+}
+.fromOne:nth-child(2) {
+	background: url(../images/fromTwo.png)no-repeat;
+	background-size: cover;
+}
+.fromOne:nth-child(3) {
+	background: url(../images/fromThree.png)no-repeat;
+	background-size: cover;
+}
+.fromOne:nth-child(4) {
+	background: url(../images/fromFour.png)no-repeat;
+	background-size: cover;
+}
+.fromOne:nth-child(1):hover{
+	background: url(../images/showOne.png)no-repeat;
+	background-size: cover;
+}
+.fromOne:nth-child(2):hover{
+	background: url(../images/showTwo.png)no-repeat;
+	background-size: cover;
+}
+.fromOne:nth-child(3):hover{
+	background: url(../images/showThree.png)no-repeat;
+	background-size: cover;
+}
+.fromOne:nth-child(4):hover{
+	background: url(../images/showFour.png)no-repeat;
+	background-size: cover;
+}
+.fromTwo:nth-child(1):hover{
+	background: url(../images/showFive.png)no-repeat;
+	background-size: cover;
+}
+.fromTwo:nth-child(2):hover{
+	background: url(../images/showSix.png)no-repeat;
+	background-size: cover;
+}
+.fromTwo:nth-child(3):hover{
+	background: url(../images/showSeven.png)no-repeat;
+	background-size: cover;
+}
+.contentTwo {
+	width: 9.9rem;
+	height: 3.3rem;
+	position: absolute;
+	bottom: 0;
+	left: 1.64rem;
+	z-index: 33;
+	display: flex;
+}
+.contentTwo .fromTwo {
+	width: 3.28rem;
+	height: 3.28rem;
+}
+.fromTwo:nth-child(1) {
+	background: url(../images/fromFive.png)no-repeat;
+	background-size: cover;
+}
+.fromTwo:nth-child(2) {
+	background: url(../images/fromSix.png)no-repeat;
+	background-size: cover;
+}
+.fromTwo:nth-child(3) {
+	background: url(../images/fromSeven.png)no-repeat;
+	background-size: cover;
+}
+/* 立即预约 */
+.nowAppointment {
+	width: 19.20rem;
+	height: 5.93rem;
+	background: url(../images/nowAppointment.png)no-repeat;
+	background-size: cover;
+	position: relative;
+}
+/* 倒计时 */
+.nowAppointment .bottomCountDown {
+	width: 1.58rem;
+	height: 0.45rem;
+	position: absolute;
+	top: 0.94rem;
+	right: 4.45rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.bottomCountDown .hour {
+	width: 0.46rem;
+	height: 0.45rem;
+}
+.bottomCountDown .minute {
+	width: 0.46rem;
+	height: 0.45rem;
+}
+.bottomCountDown .mill {
+	width: 0.46rem;
+	height: 0.45rem;
+}
+/* 免费抢占按钮 */
+.nowAppointment .bottomBuyBtn {
+	width: 4.22rem;
+	height: 0.66rem;
+	position: absolute;
+	bottom: 0.87rem;
+	right: 3.15rem;
+	background: url(../images/freeBuy.png)no-repeat;
+	background-size: cover;
+	cursor: pointer;
+}
+/* 电话框 */
+.nowAppointment .bottomTelInput {
+	width: 6.9rem;
+	height: 0.72rem;
+	outline: none;
+	border: 1px red solid;
+	position: absolute;
+	top: 2.79rem;
+	right: 2.41rem;
+	border: none;
+	font-size: 24px;
+	font-family: Microsoft YaHei, Microsoft YaHei-Regular;
+	font-weight: 400;
+	text-align: center;
+	color: #999999;
+	background-color: #e6ddd3;
+}
+/* 值得信赖 */
+.trustworthy {
+	width: 19.20rem;
+	height: 6.62rem;
+	overflow: hidden;
+}
+.trustworthy .trustworthyText {
+	width: 5.15rem;
+	height: 0.48rem;
+	background: url(../images/trustworthyText.png)no-repeat;
+	background-size: cover;
+	margin: 0.52rem auto 0 auto;
+}
+.trustworthy .otherCompany {
+	width: 6.23rem;
+	height: 0.63rem;
+	border: 1px solid #ea8422;
+	border-radius: 0.94rem;
+	margin: 0.3rem auto 0 auto;
+	font-family: Microsoft YaHei, Microsoft YaHei-Regular;
+	font-weight: 400;
+	text-align: center;
+	color: #ea8422;
+	line-height: 0.63rem;
+}
+.trustworthy .trustworthyContent {
+	width: 13.5rem;
+	height: 2.95rem;
+	border: 1px solid red;
+	margin: 0.43rem auto 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+.trustworthyContent .trustworthItem {
+	width: 4.38rem;
+	height: 2.95rem;
+	background: url(../images/companyIntro.png)no-repeat;
+	background-size: cover;
+}
+/* 底部栏 */
+.bottomBack {
+	width: 19.20rem;
+	height: 2.43rem;
+	background: url(../images/bottomBack.png)no-repeat;
+	background-size: cover;
+}
+/* 二维码 */
+.bottomCode {
+	width: 1.8rem;
+	height: 1.76rem;
+	position: absolute;
+	bottom: 1.5rem;
+	left: 8.7rem;
+	background: url(../images/QRcode.png)no-repeat;
+	background-size: cover;
+}
+/* 底部电话 */
+.bottomTel {
+	width: 2.7rem;
+	height: 0.38rem;
+	position: absolute;
+	bottom: 0.79rem;
+	left: 8.24rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.bottomTel .bottomTelPic {
+	width: 0.38rem;
+	height: 0.38rem;
+	background: url(../images/telPic.png)no-repeat;
+	background-size: cover;
+}
+.bottomTel .bottomTelNum {
+	width: 2.33rem;
+	height: 0.38rem;
+	font-size: 32px;
+	font-family: Microsoft YaHei, Microsoft YaHei-Bold;
+	font-weight: 700;
+	text-align: center;
+	color: #ffffff;
+	line-height: 0.38rem;
+}
+/* 提交成功框 */
+.submitSuccessContent {
+	width: 19.20rem;
+	height: 10.76rem;
+	background-color: rgba(0,0,0,0.73);
+	position: fixed;
+	z-index: 99;
+}
+.submitSuccessContent .submitSuccess {
+	width: 10rem;
+	height: 6.28rem;
+	background-color: #ffffff;
+	position: absolute;
+	left: 4.92rem;
+	top: 2.1rem;
+}
+.submitSuccess .close {
+	width: 0.3rem;
+	height: 0.3rem;
+	position: absolute;
+	right: 0.3rem;
+	top: 0.3rem;
+	background: url(../images/close.png)no-repeat;
+	background-size: cover;
+	cursor: pointer;
+}
+.submitSuccess .submitPic {
+	width: 1.93rem;
+	height: 1.93rem;
+	margin: 0.91rem auto 0 auto;
+	background: url(../images/success.png)no-repeat;
+	background-size: cover;
+}
+.submitSuccess .submitText1 {
+	height: 0.4rem;
+	font-size: 30px;
+	font-family: Microsoft YaHei, Microsoft YaHei-Bold;
+	font-weight: 700;
+	text-align: center;
+	color: #333333;
+	margin: 0.3rem auto 0 auto;
+}
+.submitSuccess .submitText2 {
+	height: 0.32rem;
+	font-size: 24px;
+	font-family: Microsoft YaHei, Microsoft YaHei-Regular;
+	font-weight: 400;
+	text-align: center;
+	color: #666666;
+	margin: 0.22rem auto 0 auto;
+}
+.submitSuccess .submitBtn {
+	width: 2.22rem;
+	height: 0.59rem;
+	border-radius: 4px;
+	margin: 0.7rem auto 0 auto;
+	background: url(../images/kown.png)no-repeat;
+	background-size: cover;
+	cursor: pointer;
+}
+/* 客服按钮 */
+.customerBtn {
+	width: 1.65rem;
+	height: 1.65rem;
+	position: fixed;
+	right: 0.76rem;
+	top: 7rem;
+	z-index: 99;
+	background: url(../images/customerPic.png)no-repeat center;
+	background-size: cover;
+}
+.rotatePic {
+	width: 1.65rem;
+	height: 1.65rem;
+	position: fixed;
+	top: 7rem;
+	right: 0.76rem;
+	background: url(../images/rotate.png)no-repeat center;
+	background-size: cover;
+	animation: zhuan 4s ease-out infinite;
+	z-index: 97;
+}
+@keyframes zhuan{
+	0%{transform: rotate(0deg);}
+	100%{transform: rotate(1440deg);}
+}

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- 优先使用 IE 最新版本和 Chrome -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<!-- 页面描述 -->
+		<meta name="description" content="不超过150个字符" />
+		<!-- 页面关键词 -->
+		<meta name="keywords" content="" />
+		<!-- 网页作者 -->
+		<meta name="author" content="name, email@gmail.com" />
+		<!-- 搜索引擎抓取 -->
+		<meta name="robots" content="index,follow" />
+		<!-- 为移动设备添加 viewport -->
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+		<!-- iOS 设备 begin -->
+		<meta name="apple-mobile-web-app-title" content="标题">
+		<!-- 添加到主屏后的标题（iOS 6 新增） -->
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<!-- 是否启用 WebApp 全屏模式，删除苹果默认的工具栏和菜单栏 -->
+		<meta name="apple-itunes-app" content="app-id=myAppStoreID, affiliate-data=myAffiliateData, app-argument=myURL">
+		<!-- 添加智能 App 广告条 Smart App Banner（iOS 6+ Safari） -->
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<!-- 设置苹果工具栏颜色 -->
+		<meta name="format-detection" content="telephone=no" />
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	</head>
+	<body>
+		<div class="main">
+			<div class="zhuanpan">
+				<div class="zhuanpanBg1"></div>
+				<div class="zhuanpanBg2"></div>
+			</div>
+			<div class="bimg posir">
+				<img class="imgsty" src="img/b1.png" >
+				<div class="topPhone">
+					<div class="topPhoneIcon"></div>
+					<div class="topPhoneNum">400-123-132</div>
+				</div>
+				<div class="toptime">
+					<div class="titles">
+						<div class="text t1">限时开抢</div>
+						<div class="text t2">仅剩</div>
+						<div class="text t3 h">00</div>
+						<div class="text t4">:</div>
+						<div class="text t3 m">00</div>
+						<div class="text t4">:</div>
+						<div class="text t3 s">00</div>
+					</div>
+					<div class="titles1">立即预约</div>
+					<div class="titles2">抢<span>￥500</span>无门槛直降名额</div>
+					<div class="titles3"><input class="topClickInput" type="text" placeholder="请输入您的电话号码" /></div>
+					<div class="titles4">
+						<div class="iconBox"><span class="icons icons1"></span>保证不泄露隐私</div>
+						<div class="iconBox"><span class="icons icons2"></span>保证不强制推销</div>
+					</div>
+					<div class="btn1 btn topClick">立即开抢</div>
+				</div>
+			</div>
+			<div class="bimg">
+				<img class="imgsty" src="img/b2.png" >
+			</div>
+			<div class="bimg posir">
+				<img class="imgsty" src="img/b3.png" >
+				<div class="btn btn3 zxClick">点击咨询</div>
+			</div>
+			<div class="bimg posir">
+				<img class="imgsty" src="img/b4.png" >
+				<div class="btn btn4 zxClick">点击咨询</div>
+			</div>
+			<div class="bimg posir">
+				<img class="imgsty" src="img/b5.png" >
+				<div class="btn btn5 zxClick">了解更多</div>
+			</div>
+			<div class="bimg posir">
+				<img class="imgsty" src="img/b6.png" >
+				<div class="bomtime">
+					<div class="titles">
+						<div class="text t2">仅剩</div>
+						<div class="text t3 h">00</div>
+						<div class="text t4">:</div>
+						<div class="text t3 m">00</div>
+						<div class="text t4">:</div>
+						<div class="text t3 s">00</div>
+					</div>
+					<div class="titles1">立即预约</div>
+					<div class="titles2">抢<span>￥500</span>无门槛直降名额</div>
+					<div class="titles3"><input class="btmClickInput" type="text" placeholder="请输入您的电话号码" /></div>
+					<div class="titles4">
+						<div class="iconBox"><span class="icons icons1"></span>保证不泄露隐私</div>
+						<div class="iconBox"><span class="icons icons2"></span>保证不强制推销</div>
+					</div>
+					<div class="btn1 btn btmClick">免费抢占名额</div>
+				</div>
+			</div>
+			<div class="bimg">
+				<img class="imgsty" src="img/b7.png" >
+			</div>
+			<div class="footer posir">
+				<div class="phonesBox">
+					<div class="iconPhone"></div>
+					<div class="numPhone">400-123-132</div>
+				</div>
+				<div class="erCode"></div>
+			</div>
+		</div>
+		<div class="alertModel hiddens">
+			<div class="contents">
+				<div class="closeModel" onclick="closeFun()"></div>
+				<div class="successModel"></div>
+				<div class="textModel">提交信息成功</div>
+				<div class="text1Model">我们将尽快联系您，请耐心等候噢！</div>
+				<div class="btnModel" onclick="closeFun()">知道了</div>
+				
+			</div>
+		</div>
+		<script src="js/public.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jq.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var domin = 'https://housekeeping.ckldzsw.com/app/customer/postInfo'
+			var myreg = /^[1][3,4,5,7,8][0-9]{9}$/;
+			$('.zxClick').on('click',function(){
+				alert(123)
+			})
+			$('.topClick').on('click',function(){
+				var phoneNum = $('.topClickInput').val()
+				if(phoneNum == ''){return}
+				if(!myreg.test(phoneNum)){
+					return
+				}
+				sevrePhone(phoneNum)
+			})
+			$('.btmClick').on('click',function(){
+				var phoneNum = $('.btmClickInput').val()
+				if(phoneNum == ''){return}
+				if(!myreg.test(phoneNum)){
+					return
+				}
+				sevrePhone(phoneNum)
+			})
+			function closeFun(){
+				$('.alertModel').addClass('hiddens')
+			}
+			function sevrePhone(phone){
+				$.ajax({
+					type:'GET',
+					url: domin,
+					data:{phone:phone},
+					success:function(data){
+						if(data.flag){
+							$('.alertModel').removeClass('hiddens')
+							alert(data.message)
+						}
+						alert(data.message)
+					}
+				})
+			}
+			function timeFun(){
+				var timer=null;
+				var t1= +new Date() + 1000*60*60*10
+				function test(){
+				    if(t1-new Date()<=0){
+				      clearInterval(timer);
+				    }else{
+				      var d=cd(t1, new Date(), 'd');
+				      var h=cd(t1, new Date(), 'h');
+				      var m=cd(t1, new Date(), 'm');
+				      var s=cd(t1, new Date(), 's');
+					  $('.h').text(h)
+					  $('.m').text(m)
+					  $('.s').text(s)
+				    }
+				}
+				setInterval(test,1000);
+			}
+			function cd(t1, t2, tg) {
+			    //相差的毫秒数
+			    var ms = t1 - Date.parse(t2);
+			    var minutes = 1000 * 60;
+			    var hours = minutes * 60;
+			    var days = hours * 24;
+			    var years = days * 365;
+			    //求出天数
+			    var d = Math.floor(ms / days);
+			    //求出除开天数，剩余的毫秒数
+			    ms %= days;
+			    var h = Math.floor(ms / hours);
+			    ms %= hours;
+			    var m = Math.floor(ms / minutes);
+			    ms %= minutes;
+			    var s = Math.floor(ms / 1000);
+			    //返回所需值并退出函数
+			    switch(tg){
+			      case 'd' : return d;
+			      case 'h' : return h;
+			      case 'm' : return m;
+			      case 's' : return s;
+			    }
+			}
+			timeFun()
+		</script>
+	</body>
+</html>
